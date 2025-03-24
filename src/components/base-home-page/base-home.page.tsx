@@ -13,11 +13,13 @@ import { TabType } from "../buttons/tab-button/tab-button.component";
 import { useIsMobile } from "../../shared/is-mobile-context/is-mobile.context";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import { BottomNavigationAction } from "@mui/material";
-import { ReactComponent as GamesIcon } from "../../assets/icons_controller.svg";
+import { ReactComponent as HomeIcon } from "../../assets/icons_controller.svg";
+import { ReactComponent as ProfileIcon } from "../../assets/icon-profile-box.svg";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import {
-  HOME_PATH
+  HOME_PATH,
+  REGISTER_EMPLOYEE,
 } from "../../routers/private.route";
 
 interface IBaseHomePageProps {
@@ -37,11 +39,17 @@ const BaseHomePage: React.FC<IBaseHomePageProps> = ({
     switch (selectedTab) {
       case TabType.MANAGER_EMPLOYEE:
         return t("magane-employees");
+      case TabType.UNSELECTED:
+        return t("mobile-label");
     }
   };
 
   const goToEmployees = () => {
     navigate(HOME_PATH);
+  };
+
+  const newEmployees = () => {
+    navigate(REGISTER_EMPLOYEE);
   };
 
   return (
@@ -60,14 +68,26 @@ const BaseHomePage: React.FC<IBaseHomePageProps> = ({
               }}
             >
               <BottomNavigationAction
-                label={t("games.label")}
+                label={t("manage-users.label")}
                 sx={{ gap: "4px" }}
                 onClick={goToEmployees}
                 icon={
                   <BottomNavigationItemContainer
-                    selected={getText() === t("games.label")}
+                    selected={getText() === t("manage-users.label")}
                   >
-                    <GamesIcon />
+                    <HomeIcon />
+                  </BottomNavigationItemContainer>
+                }
+              />
+              <BottomNavigationAction
+                label={t("mobile-label")}
+                sx={{ gap: "4px" }}
+                onClick={newEmployees}
+                icon={
+                  <BottomNavigationItemContainer
+                    selected={getText() === t("mobile-label")}
+                  >
+                    <ProfileIcon />
                   </BottomNavigationItemContainer>
                 }
               />

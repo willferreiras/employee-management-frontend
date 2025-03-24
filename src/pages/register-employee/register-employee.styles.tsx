@@ -52,12 +52,11 @@ const ContainerForm = styled.div`
   flex-direction: column;
   max-width: 100%;
   
-
-
   @media (max-width: ${MOBILE_BREAKPOINT}px) {
     height: calc(100vh - 64px - 80px - 105px);
     overflow-x: hidden;
     overflow-y: auto;
+    margin-left: 24px;
   }
 
   @media (min-width: ${MOBILE_BREAKPOINT}px) {

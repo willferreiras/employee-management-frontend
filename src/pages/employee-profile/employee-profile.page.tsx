@@ -53,14 +53,14 @@ const PEmployeeProfilePage: React.FC<IEmployeeProfilePageProps> = ({ employeeSer
                     fontFamily: "Bebas Neue",
                   }}
                 >
-                  {t("pages.register.title")}
+                  {t("pages.register.update-title")}
                 </Typography>
               </SharedTitleBackContainer>
               <Typography
                 variant="bodySmallRegular"
                 sx={{ color: colors.palette.neutral600, marginTop: "8px" }}
               >
-                {t("pages.register.description")}
+                {t("pages.register.update-description")}
               </Typography>
             </SharedTittleContainer>
             <ContainerForm>

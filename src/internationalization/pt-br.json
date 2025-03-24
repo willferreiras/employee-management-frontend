@@ -61,8 +61,10 @@
       "user-not-updated": "Erro ao atualizar usuário"
     },
     "register": {
+      "update-title": "Atualizar", 
       "title": "Novo funcionário",
       "description": "Cadastro de funcionários. Todos os campos são obrigatórios.",
+      "update-description": "Atualização de funcionário.",
       "name": "Nome",
       "lastName": "Sobrenome",
       "email": "E-mail",
@@ -177,7 +179,8 @@
       },
       "employee": {
         "label": "Novo funcionário"
-      }
+      },
+      "mobile-label": "Novo"
     }
   }
 }
