@@ -1,0 +1,183 @@
+{
+  "domain": {
+    "user": {
+      "name": {
+        "label": "Nome",
+        "variants": {
+          "firstName": {
+            "label": "Nome"
+          },
+          "lastName": {
+            "label": "Sobrenome"
+          },
+          "fullname": {
+            "label": "Nome completo"
+          }
+        }
+      }
+    }
+  },
+  "pages": {
+    "home": {
+      "welcome": "Bem-vindo,",
+      "employees": "Funcionários",
+      "empty-employees": "Ops. Não existem funcionários cadastrados.",
+      "my-employees-card": {
+        "menu-inactivate": "Inativar",
+        "menu-activate": "Ativar"
+        
+      }
+    },
+    "login": {
+      "title": "Login",
+      "username": "Usuário",
+      "password": "Senha",
+      "buttons": {
+        "login": "Entrar"
+      },
+      "success": {
+        "title": "Login efetuado com sucesso!"
+      },
+      "error": {
+        "username": "Usuário inválido",
+        "password": "Senha inválida",
+        "invalid-credentials": "Credenciais inválidas"
+      }
+    },
+    "profile": {
+      "action-buttons": {
+        "settings": "Configurações"
+      },
+      "change-username-pop-up": {
+        "title": "nome de usuário",
+        "username-lenght-alert": "Número máximo de caracteres: 15",
+        "username-not-real-alert": "Não use seu nome real, nem utilize dados pessoais.",
+        "buttons": {
+          "cancel": "Cancelar",
+          "ok": "OK"
+        }
+      },
+      "user-updated": "Usuário atualizado",
+      "user-not-updated": "Erro ao atualizar usuário"
+    },
+    "register": {
+      "title": "Novo funcionário",
+      "description": "Cadastro de funcionários. Todos os campos são obrigatórios.",
+      "name": "Nome",
+      "lastName": "Sobrenome",
+      "email": "E-mail",
+      "password": "Senha",
+      "document": "CPF",
+      "confirm-password": "Confirmação da Senha", 
+      "active": "Ativo",
+      "buttons": {
+        "register": "Cadastrar",
+        "update": "Atualizar",
+        "back": "Voltar"
+      },
+      "error": {
+        "name": "Nome inválido",
+        "lastName": "Sobrenome inválido",
+        "email": "E-mail inválido",
+        "password": "Senha inválida",
+        "password-required": "Senha é obrigatória",
+        "document": "CPF inválido",
+        "confirm-password": "Confirmação de senha inválida",
+        "password-not-match": "As senhas não coincidem",
+        "general": "Erro ao cadastrar funcionário"
+      },
+      "success": {
+        "title": "Cadastro efetuado com sucesso!"
+      }
+    }
+  },
+  "components": {
+    "buttons": {
+      "refresh": {
+        "label": "Recarregar"
+      },
+      "continue": {
+        "label": "Continuar"
+      },
+      "confirm": {
+        "label": "Confirmar"
+      },
+      "logout": {
+        "label": "Encerrar"
+      },
+      "edit": {
+        "label": "Editar",
+        "variants": {
+          "info": "Editar informações"
+        }
+      },
+      "save": {
+        "label": "Salvar"
+      },
+      "cancel": {
+        "label": "Cancelar"
+      },
+      "change": {
+        "label": "Alterar"
+      },
+      "clean": {
+        "label": "Limpar",
+        "variants": {
+          "remake": "Limpar e Refazer"
+        }
+      },
+      "update": {
+        "label": "Atualizar"
+      },
+      "allow": {
+        "label": "Permitir"
+      },
+      "delete": {
+        "label": "Deletar"
+      },
+      "resend": {
+        "label": "Reenviar"
+      },
+      "include": {
+        "label": "Incluir"
+      }
+    },
+    "inputs": {
+      "observation": {
+        "label": "Observação"
+      }
+    },
+    "pop-ups": {
+      "document-invalid": {
+        "title": "CPF inválido",
+        "description": "O CPF informado é inválido, por favor, verifique e tente novamente!",
+        "buttons": {
+          "positive": "Entendi"
+        }
+      }
+    },
+    "loading": {
+      "title": "Carregando..."
+    },
+    "error": {
+      "description": "Houve um erro no carregamento do conteúdo. Clique no botão abaixo para recarregar a página."
+    },
+    "profile": {
+      "buttons": {
+        "profile": "Perfil",
+        "logout": "Sair"
+      }
+    },
+    "tab": {
+      "manage-employees": {
+        "label": "Funcionários"
+      },
+      "manage-users": {
+        "label": "Home"
+      },
+      "employee": {
+        "label": "Novo funcionário"
+      }
+    }
+  }
+}
